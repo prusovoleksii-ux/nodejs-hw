@@ -31,7 +31,7 @@ app.get('/notes', (req, res) => {
 });
 
 app.get('/notes/:noteId', (req, res) => {
-  const { noteId } = Number(req.params.noteId);
+  const { noteId } = req.params;
   res.status(200).json({
     message: `Retrieved note with ID: ${noteId}`,
   });
