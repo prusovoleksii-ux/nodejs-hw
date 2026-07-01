@@ -4,7 +4,7 @@ import {
   deleteNote,
   getNoteById,
   getNotes,
-  updateNote} from '../controllers/notesController';
+  updateNote } from '../controllers/notesController.js';
 
 const router = Router();
 
